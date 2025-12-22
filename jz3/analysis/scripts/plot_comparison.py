@@ -29,7 +29,6 @@ class ConstraintPlotter:
         self.grid = grid
 
     def _parse_data(self):
-        print(self.file_path)
         conn = sqlite3.connect(self.file_path)
         cursor = conn.cursor()
         cursor.execute("""
